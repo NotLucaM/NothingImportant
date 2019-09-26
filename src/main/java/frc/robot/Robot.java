@@ -105,9 +105,9 @@ public class Robot extends TimedRobot {
   double integral = 0;
 
   public double pid() {
-      int kP = 1;
-      int kD = 0;
-      int kI = 0;
+      double kP = 0.01;
+      double kD = 0;
+      double kI = 0;
 
       double error = target - getLoc();
       double v = (error - lastError) / 0.02;
